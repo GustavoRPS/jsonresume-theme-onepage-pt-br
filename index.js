@@ -1,5 +1,7 @@
 var fs = require("fs");
 var Handlebars = require("handlebars");
+var Moment = require('moment');
+Moment.locale('pt-BR');
 
 COURSES_COLUMNS = 3;
 
@@ -52,6 +54,16 @@ function render(resume) {
 
 	var css = fs.readFileSync(__dirname + "/style.css", "utf-8");
 	var tpl = fs.readFileSync(__dirname + "/resume.hbs", "utf-8");
+
+  Handlebars.registerHelper("prettifyDate", function(date) {
+    if (!date) {
+      return 'Atualmente';
+    }
+    var newDate = Moment(date).format('MMM YYYY');
+    console.log('newDate: ' + newDate);
+    return newDate;
+  });
+
 	return Handlebars.compile(tpl)({
 		css: css,
 		resume: resume
