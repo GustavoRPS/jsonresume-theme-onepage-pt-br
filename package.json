@@ -1,11 +1,11 @@
 {
-  "name": "jsonresume-theme-onepage",
+  "name": "jsonresume-theme-onepage-pt-br",
   "version": "0.0.3",
-  "description": "Compact, printable theme for JSON Resume",
-  "author": "Ainsley Chong",
+  "description": "Compact, printable theme for JSON Resume in Portuguese (Brazil)",
+  "author": "@GustavoRPS",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ainsleychong/jsonresume-theme-onepage.git"
+    "url": "https://github.com/gustavorps/jsonresume-theme-onepage-pt-br.git"
   },
   "license": "MIT",
   "dependencies": {
@@ -14,9 +14,9 @@
     "moment": "^2.8.2"
   },
   "bugs": {
-    "url": "https://github.com/ainsleychong/jsonresume-theme-onepage/issues"
+    "url": "https://github.com/gustavorps/jsonresume-theme-onepage-pt-br/issues"
   },
-  "homepage": "https://github.com/ainsleychong/jsonresume-theme-onepage",
+  "homepage": "https://github.com/gustavorps/jsonresume-theme-onepage-pt-br",
   "main": "index.js",
   "devDependencies": {}
 }
